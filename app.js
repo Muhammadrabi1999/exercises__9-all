@@ -15,12 +15,12 @@ const purchases = [
 ];
 
 
-const max = purchases.map(item => ({
+const MAX = purchases.map(item => ({
     date: item.date,
     count: item.values.length
 })).reduce((acc, curr) => acc.count > curr.count ? acc : curr);
 
-const result = max.date;
+const result = MAX.date;
 console.log(result);
 
 }
